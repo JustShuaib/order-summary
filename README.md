@@ -1,1 +1,1 @@
-https://www.JustShuaib.github.io/order-summary-component
+https://www.JustShuaib.github.io/order-summary
