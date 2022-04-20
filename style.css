@@ -17,7 +17,6 @@ body {
   background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-color: var(--pry-pale-blue);
 }
 @media screen and (min-width: 1440px) {
@@ -52,7 +51,6 @@ body {
 }
 .text {
   color: var(--desaturated-blue);
-
   line-height: 1.5rem;
   text-align: center;
 }
