@@ -1,5 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pry-pale-blue: hsl(225, 100%, 94%);
+  --pry-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--pry-pale-blue);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: white;
+  width: min(80%, 400px);
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main-img {
+  object-fit: cover;
+}
+.main-section {
+  padding: 1.5rem 2rem;
+}
+.heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+}
+.text {
+  color: var(--desaturated-blue);
+  padding: 0 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: auto;
+  color: var(--desaturated-blue);
+}
+.annual-plan {
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-transform: capitalize;
+}
+.change-link {
+  color: var(--pry-bright-blue);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.change-link:hover {
+  color: hsl(245, 61%, 58%);
+  text-decoration: none;
+}
+.btn {
+  background-color: var(--pry-bright-blue);
+  color: var(--very-pale-blue);
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 15px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: hsl(245, 61%, 58%);
+}
+.cancel-btn {
+  display: block;
+  margin-top: 1rem;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+.cancel-btn:hover {
+  color: var(--dark-blue);
 }
