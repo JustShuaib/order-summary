@@ -62,6 +62,12 @@ body {
   border-radius: 10px;
   padding: 0.7rem 1rem;
   margin: 1rem 0;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 340px) {
+  .container {
+    font-size: 1rem;
+  }
 }
 .plan {
   display: flex;
