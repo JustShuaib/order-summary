@@ -32,12 +32,13 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: white;
-  width: min(80%, 400px);
+  width: min(90%, 400px);
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .main-img {
   object-fit: cover;
+  width: 100%;
 }
 .main-section {
   padding: 1.5rem 2rem;
@@ -51,7 +52,7 @@ body {
 }
 .text {
   color: var(--desaturated-blue);
-  padding: 0 1.5rem;
+
   line-height: 1.5rem;
   text-align: center;
 }
