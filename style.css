@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-color: var(--pry-pale-blue);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 500px) {
   body {
     background-image: url(./images/pattern-background-desktop.svg);
   }
